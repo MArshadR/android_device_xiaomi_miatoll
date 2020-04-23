@@ -8,9 +8,9 @@
 set -e
 
 # Required!
-export DEVICE=davinci
+export DEVICE=curtana
 export VENDOR=xiaomi
 
-export DEVICE_BRINGUP_YEAR=2019
+export DEVICE_BRINGUP_YEAR=2020
 
 "./../../${VENDOR}/${DEVICE}/setup-makefiles.sh" "$@"
