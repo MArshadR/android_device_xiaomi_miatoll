@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "TheCynicalDev/kernel_xiaomi_curtana",
+    "target_path": "kernel/xiaomi/curtana",
+     "branch": "10.x",
+     "remote": "github"
+  },
+  {
+    "repository": "MArshadR/vendor_xiaomi_curtana",
+    "target_path": "vendor/xiaomi/curtana",
+    "branch": "10.x"
+    "remote": "github"
+  }
+]
