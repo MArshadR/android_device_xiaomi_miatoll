@@ -19,9 +19,6 @@ TARGET_BOOTLOADER_BOARD_NAME := curtana
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Kernel
-TARGET_KERNEL_CONFIG := curtana_defconfig
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -29,15 +26,32 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
 
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a76  
-
+# Screen density
+TARGET_SCREEN_DENSITY := 400
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-02-01
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := curtana
+
+# Dexpreopt
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
+
+# Kernel
+BOARD_KERNEL_BASE := 0x80000000
+BOARD_KERNEL_CMDLINE := androidboot.selinux.permissive
+TARGET_KERNEL_SOURCE := kernel/xiaomi/curtana
+TARGET_KERNEL_CONFIG := curtana_defconfig
+TARGET_KERNEL_VERSION := 4.14
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
