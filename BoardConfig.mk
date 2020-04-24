@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #
 # Copyright (C) 2020 The LineageOS Project
 #
@@ -55,5 +54,8 @@ TARGET_KERNEL_CLANG_COMPILE := true
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
 
 -include vendor/xiaomi/curtana/BoardConfigVendor.mk
