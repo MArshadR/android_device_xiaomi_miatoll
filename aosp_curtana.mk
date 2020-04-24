@@ -5,7 +5,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/xiaomi/onclite/device.mk)
+$(call inherit-product, device/xiaomi/curtana/device.mk)
 
 # Inherit some AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
@@ -14,7 +14,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cesium_curtana
+PRODUCT_NAME := aosp_curtana
 PRODUCT_DEVICE := curtana
 PRODUCT_BRAND := Redmi/Xiaomi
 PRODUCT_MODEL := Redmi Note 9s
