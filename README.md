@@ -10,7 +10,7 @@ smartphone from Xiaomi(Redmi).
  
   ## Device specifications
  
-  Basic | Spec Sheet -------:|:-------------------------
+Basic | Spec Sheet -------:|:-------------------------
  
 SoC | Qualcomm SM7125 Snapdragon 720G
 
