@@ -57,5 +57,5 @@ void vendor_load_properties()
 {
     // fingerprint
     property_override("ro.build.description", "curtana-user 10 QKQ1.191215.002 V11.0.5.0.JWINNXM release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/bonito/bonito:10/QQ2A.200305.002/6138846:user/release-keys");
 }
