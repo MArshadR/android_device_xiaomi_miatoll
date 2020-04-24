@@ -1,8 +1,8 @@
   PRODUCT_MAKEFILES := \
-     lineage_curtana.mk
+     aosp_curtana.mk
 
 COOMON_LUNCH_CHOICES := \
-     lineage_curtana-userdebug \
-     lineage_curtana-user \
-     lineage_curtana-eng
+     aosp_curtana-userdebug \
+     aosp_curtana-user \
+     aosp_curtana-eng
 
