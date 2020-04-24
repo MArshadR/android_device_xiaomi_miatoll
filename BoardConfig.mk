@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/curtana 
+DEVICE_PATH := device/xiaomi/curtana
 
 # Screen density
 TARGET_SCREEN_DENSITY := 400
@@ -45,5 +45,8 @@ TARGET_KERNEL_CLANG_COMPILE := true
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
 
 -include vendor/xiaomi/curtana/BoardConfigVendor.mk
