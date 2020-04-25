@@ -13,7 +13,7 @@ smartphone from Xiaomi(Redmi).
  
   ## Device specifications
  
- Basic   | Spec Sheet -------:|:-------------------------
+Specs --:|:-------------------------
    SoC   | Qualcomm SM7125 Snapdragon 720G
    CPU   | Octa-core (2x2.3 GHz Kryo 465 Gold & 6x1.8 GHz Kryo 465 Silver)
    GPU   | Adreno 618
