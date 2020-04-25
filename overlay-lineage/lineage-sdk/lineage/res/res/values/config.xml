@@ -12,7 +12,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
     <!-- All the capabilities of the LEDs on this device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
          of the following capabilities present:
