@@ -13,7 +13,8 @@ smartphone from Xiaomi(Redmi).
  
   ## Device specifications
  
-Specs --:|:-------------------------
+  Specs
+--------:|:-------------------------
    SoC   | Qualcomm SM7125 Snapdragon 720G
    CPU   | Octa-core (2x2.3 GHz Kryo 465 Gold & 6x1.8 GHz Kryo 465 Silver)
    GPU   | Adreno 618
@@ -24,7 +25,6 @@ MicroSD  | SDXC
 Battery  | Non-removable Li-Polymer 4000 mAh battery
 Dimension| 158.6 x 76.4 x 8.4 mm
 Display  | 1080 x 2400 pixels, 20:1 ratio, 6.67 inches
-
  
  
   ## Device picture
