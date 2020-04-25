@@ -10,7 +10,7 @@ smartphone from Xiaomi(Redmi).
  
   ## Device specifications
  
-  Specs
+  Basic  |  Spec Sheet
 --------:|:-------------------------
    SoC   | Qualcomm SM7125 Snapdragon 720G
    CPU   | Octa-core (2x2.3 GHz Kryo 465 Gold & 6x1.8 GHz Kryo 465 Silver)
@@ -23,7 +23,4 @@ Battery  | Non-removable Li-Polymer 4000 mAh battery
 Dimension| 158.6 x 76.4 x 8.4 mm
 Display  | 1080 x 2400 pixels, 20:1 ratio, 6.67 inches
  
- 
-  ## Device picture
- 
-  ![Xiaomi Redmi Note 9 ](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-9-pro-1.jpg "Xiaomi Redmi Note 9")
+
