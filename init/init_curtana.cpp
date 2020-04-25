@@ -56,6 +56,6 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 void vendor_load_properties()
 {
     // fingerprint
-    property_override("ro.build.description", "curtana-user 10 QKQ1.191215.002 V11.0.5.0.JWINNXM release-keys");
+    property_override("ro.build.description", "Redmi/curtana/curtana:10/QKQ1.191215.002/V11.0.4.0.QJWINXM:user/release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/bonito/bonito:10/QQ2A.200305.002/6138846:user/release-keys");
 }
