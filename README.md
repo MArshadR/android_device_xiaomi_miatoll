@@ -27,5 +27,5 @@ Display  | 1080 x 2400 pixels, 20:9 ratio, 6.67 inches
 
 # Device Picture
 
-![Xiaomi Redmi Note 9 ](https://www.gizchina.com/wp-content/uploads/images/2020/03/redmi-note-9-pro-max.jpeg "Xiaomi Redmi Note 9") 
+![Xiaomi Redmi Note 9 ](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-9-pro-max-2.jpg "Xiaomi Redmi Note 9") 
 
