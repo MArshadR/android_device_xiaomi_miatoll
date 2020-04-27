@@ -31,6 +31,14 @@ TARGET_SCREEN_DENSITY := 400
 # Assert
 TARGET_OTA_ASSERT_DEVICE := curtana
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := sm7125
+TARGET_NO_BOOTLOADER := true
+
+# Platform
+TARGET_BOARD_PLATFORM := sm7125
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -41,7 +49,7 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
-# Kernel [TODO - make enforcing ]
+# Kernel [TODO - make enforcing/source built ]
 BOARD_KERNEL_BASE := 0x80000000
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1
