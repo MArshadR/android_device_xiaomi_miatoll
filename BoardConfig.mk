@@ -38,11 +38,10 @@ TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset=0x01000000 --tags_offset=0x00000100
 BOARD_KERNEL_CMDLINE := androidboot.selinux.permissive
-TARGET_KERNEL_SOURCE := kernel/xiaomi/curtana
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 TARGET_KERNEL_CONFIG := curtana_defconfig
 TARGET_KERNEL_VERSION := 4.14
-TARGET_KERNEL_CLANG_COMPILE := true
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
