@@ -9,21 +9,18 @@
 
 DEVICE_PATH := device/xiaomi/curtana
 
-# Inherit proprietary blobs
--include vendor/xiaomi/curtana/BoardConfigVendor.mk
-
-# Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := curtana
-
-# Display
-TARGET_SCREEN_DENSITY := 440
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a9
+TARGET_USES_64_BIT_BINDER := true
 
 # Screen density
 TARGET_SCREEN_DENSITY := 400
@@ -56,6 +53,8 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom andro
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset=0x01000000
 BOARD_MKBOOTIMG_ARGS := --tags_offset=0x00000100
 BOARD_KERNEL_CMDLINE := androidboot.selinux.permissive
+BOARD_KERNEL_TAGS_OFFSET := 0x00000100
+BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 TARGET_KERNEL_VERSION := 4.14
@@ -70,5 +69,5 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2020-02-01
 
-# Inherit proprietary stuffs from vendor
+# Inherit proprietary blobs
 -include vendor/xiaomi/curtana/BoardConfigVendor.mk
