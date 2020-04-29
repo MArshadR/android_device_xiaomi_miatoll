@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+LOCAL_PATH := device/xiaomi/curtana
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -24,8 +26,4 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 9 Pro Max
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="curtana" \
-    TARGET_DEVICE="curtana"
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
