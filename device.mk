@@ -13,15 +13,17 @@ $(call inherit-product-if-exists, vendor/xiaomi/curtana/curtana-vendor.mk)
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
-=======
+
 # Inherit common stuffs
 $(call inherit-product, vendor/xiaomi/curtana/curtana-vendor.mk)
->>>>>>> curtana: Build NoCutoutOverlay
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
