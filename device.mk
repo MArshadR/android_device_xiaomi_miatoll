@@ -4,16 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit common stuffs
+# Inherit common stuffs 
 $(call inherit-product, vendor/xiaomi/curtana/curtana-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
