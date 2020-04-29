@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/sm6250-common/common.mk)
 
 # Inherit proprietary targets
-$(call inherit-product-if-exists, vendor/xiaomi/curtana/curtana-vendor.mk)
+$(call inherit-product, vendor/xiaomi/curtana/curtana-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -21,9 +21,6 @@ $(call inherit-product, vendor/xiaomi/curtana/curtana-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
