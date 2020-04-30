@@ -6,7 +6,7 @@
 LOCAL_PATH := device/xiaomi/curtana
 
 # Inherit common stuffs
-$(call inherit-product, vendor/xiaomi/curtana/curtana-vendor.mk)
+$(call inherit-product, vendor/redmi/curtana/curtana-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
