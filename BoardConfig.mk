@@ -16,6 +16,8 @@
 
 DEVICE_PATH := device/xiaomi/curtana
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -79,4 +81,4 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 VENDOR_SECURITY_PATCH := 2020-02-01
 
 # Inherit proprietary stuffs from vendor
--include vendor/xiaomi/curtana/BoardConfigVendor.mk
+-include vendor/redmi/curtana/BoardConfigVendor.mk
