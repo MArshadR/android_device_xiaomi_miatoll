@@ -16,6 +16,8 @@
 
 DEVICE_PATH := device/xiaomi/curtana
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -29,6 +31,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a9
 TARGET_USES_64_BIT_BINDER := true
+
+# Audio
+USE_XML_AUDIO_POLICY_CONF := 1
 
 # Screen density
 TARGET_SCREEN_DENSITY := 400
@@ -63,8 +68,8 @@ BOARD_MKBOOTIMG_ARGS := --tags_offset=0x00000100
 BOARD_KERNEL_CMDLINE := androidboot.selinux.permissive
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt
-TARGET_PROBUILT_DTBO := $(DEVICE_PATH)/prebuilt
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 TARGET_KERNEL_VERSION := 4.14
 
@@ -79,4 +84,4 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 VENDOR_SECURITY_PATCH := 2020-02-01
 
 # Inherit proprietary stuffs from vendor
--include vendor/xiaomi/curtana/BoardConfigVendor.mk
+-include vendor/redmi/curtana/BoardConfigVendor.mk
