@@ -35,6 +35,10 @@ PRODUCT_COPY_FILES += \
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    BluetoothQti
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 

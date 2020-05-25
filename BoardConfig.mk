@@ -14,6 +14,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a9
 
+# Bluetooth
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
 # Platform
 TARGET_BOARD_PLATFORM := atoll
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
