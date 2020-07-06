@@ -83,7 +83,6 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
   vendor \
   product
 
-
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
