@@ -31,11 +31,11 @@ TARGET_SCREEN_DENSITY := 400
 TARGET_OTA_ASSERT_DEVICE := curtana
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sm7125
+TARGET_BOOTLOADER_BOARD_NAME := sm6250
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-TARGET_BOARD_PLATFORM := sm7125
+TARGET_BOARD_PLATFORM := sm6250
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 
 # Dexpreopt
@@ -48,7 +48,7 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
-# Kernel [TODO - make enforcing/source built ]
+# Kernel
 BOARD_KERNEL_BASE := 0x80000000
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1
@@ -57,8 +57,9 @@ BOARD_MKBOOTIMG_ARGS := --tags_offset=0x00000100
 BOARD_KERNEL_CMDLINE := androidboot.selinux.permissive
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7125
+TARGET_KERNEL_CONFIG := curtana_defconfig
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 TARGET_KERNEL_VERSION := 4.14
 
@@ -78,10 +79,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 402653184
 BOARD_SUPER_PARTITION_SIZE := 8589934592
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 8589934592
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-  system \
-  vendor \
-  product
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
