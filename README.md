@@ -3,10 +3,10 @@ Copyright (C) 2020 - The LineageOS Project
 Device tree for Redmi Note 9S / 9 Pro devices
 Copyright (C) 2020 The LineageOS Project
  
-  Device configuration for Xiaomi Redmi Note 9 
-  ============================================
+  Device configuration for Xiaomi Redmi Note 9s
+ =========================================
  
-  The Xiaomi Redmi Note 9 (codenamed "curtana") is an mid-range 
+  The Xiaomi Redmi Note 9s (codenamed "curtana") is an mid-range 
 smartphone from Xiaomi(Redmi).
  
   It was announced and released in April 2020.
@@ -27,5 +27,5 @@ Display  | 1080 x 2400 pixels, 20:9 ratio, 6.67 inches
 
 # Device Picture
 
-![Xiaomi Redmi Note 9 ](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-9-pro-max-2.jpg "Xiaomi Redmi Note 9") 
+![Xiaomi Redmi Note 9s ](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-9-pro-max-2.jpg "Xiaomi Redmi Note 9s") 
 
