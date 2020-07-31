@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from sm6250-common
--include device/xiaomi/sm6250-common/BoardConfigCommon.mk
-
 DEVICE_PATH := device/xiaomi/curtana
 
 BUILD_BROKEN_DUP_RULES := true
