@@ -14,6 +14,10 @@ $(call inherit-product, vendor/xiaomi/curtana/curtana-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Inherit common stuffs
 $(call inherit-product, vendor/xiaomi/curtana/curtana-vendor.mk)
 
