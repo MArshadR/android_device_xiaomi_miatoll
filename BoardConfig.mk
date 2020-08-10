@@ -27,9 +27,6 @@ BOARD_HAVE_QCOM_FM := true
 TARGET_BOARD_PLATFORM := atoll
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 
-# HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
@@ -50,3 +47,13 @@ TARGET_ODM_PROP := $(DEVICE_PATH)/odm.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+# HIDL
+ODM_MANIFEST_SKUS += \
+    joyeuse
+
+ODM_MANIFEST_JOYEUSE_FILES := $(DEVICE_PATH)/manifest_joyeuse.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse
