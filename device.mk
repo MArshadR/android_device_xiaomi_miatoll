@@ -82,6 +82,10 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_PACKAGES += \
     BluetoothQti
 
+# Camera
+PRODUCT_PACKAGES += \
+    libshim_megvii
+
 # Display
 PRODUCT_PACKAGES += \
     vendor.display.config@1.0
