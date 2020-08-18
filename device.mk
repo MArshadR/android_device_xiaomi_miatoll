@@ -14,5 +14,7 @@
 # limitations under the License.
 #
 
+$(call inherit-product, vendor/xiaomi/sm6250-common/sm6250-common.mk)
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
