@@ -1,0 +1,121 @@
+# Audio
+ro.qc.sdk.audio.ssr=false
+audio.offload.gapless.enabled=true
+av.offload.enable=true
+audio.offload.video=true
+ro.af.client_heap_size_kbyte=7168
+audio.deep_buffer.media=true
+audio.offload.buffer.size.kb=32
+tunnel.audio.encode = true
+
+# RIL
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+DEVICE_PROVISIONED=1
+ro.telephony.default_network=22,22
+
+# Dalvik
+dalvik.vm.heapsize=36m
+dev.pm.dyn_samplingrate=1
+
+# HDMI
+ro.hdmi.enable=true
+
+# CNE
+persist.vendor.cne.feature=1
+
+# DPM
+persist.dpm.feature=1
+
+# MM Modules
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+mm.enable.smoothstreaming=true
+vendor.mm.enable.qcom_parser=131071983
+persist.mm.enable.prefetch=true
+
+# Netflix
+ro.netflix.bsp_rev=Q6250-19132-1
+
+# Data
+ro.vendor.use_data_netmgrd=true
+persist.vendor.data.mode=concurrent
+
+# Time-Services
+persist.timed.enable=true
+
+# OpenGLES
+ro.opengles.version=196610
+
+# Telephony
+telephony.lteOnCdmaDevice=1
+
+# SD Card
+persist.fuse_sdcard=true
+
+# Bluetooth
+ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.service.bdroid.soc.alwayson=true
+
+# Fluence
+ro.qc.sdk.audio.fluencetype=none
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=true
+
+# RMNET
+persist.rmnet.data.enable=true
+persist.data.wda.enable=true
+persist.data.df.dl_mode=5
+persist.data.df.ul_mode=5
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.mux_count=8
+persist.data.df.iwlan_mux=9
+persist.data.df.dev_name=rmnet_usb0
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+
+# Display
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+
+# NFC
+ro.nfc.port=I2C
+
+# Common Props
+persist.sys.force_sw_gles=1
+persist.vendor.radio.atfwd.start=true
+ro.kernel.qemu.gles=0
+qemu.hw.mainkeys=0
+
+# Codecs
+debug.stagefright.ccodec=1
+
+# Wifi LAN
+ro.wlan.vendor=qcom
+ro.hardware.wlan.vendor=qcom
+ro.wlan.chip=wcn3991
+ro.hardware.wlan.chip=
+ro.wlan.mimo=enable
+ro.hardware.wlan.mimo=
+
+# Headphone Jack
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+persist.vendor.ssr.enable_ramdumps=1
+
