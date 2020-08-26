@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES += \
-    pa_curtana.mk
+    lineage_curtana.mk
 
 COMMON_LUNCH_CHOICES += \
-    pa_curtana-userdebug \
-    pa_curtana-user \
-    pa_curtana-eng
+    lineage_curtana-userdebug \
+    lineage_curtana-user \
+    lineage_curtana-eng
