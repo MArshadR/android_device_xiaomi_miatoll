@@ -33,3 +33,4 @@ BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8 androidboot.hardware=qcom andro
 TARGET_USES_64_BIT_BINDER := true
 
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+TARGET_ODM_PROP := $(DEVICE_PATH)/odm.prop
