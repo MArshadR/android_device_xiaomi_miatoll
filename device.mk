@@ -105,3 +105,7 @@ PRODUCT_PACKAGES += \
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
+
+# UeventD
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
