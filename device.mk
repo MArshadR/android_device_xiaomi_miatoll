@@ -14,7 +14,9 @@
 # limitations under the License.
 #
 
+# Vendors
 $(call inherit-product, vendor/xiaomi/sm6250-common/sm6250-common.mk)
+$(call inherit-product, vendor/xiaomi/miatoll/miatoll-common.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
