@@ -1,5 +1,7 @@
+DEVICE_PATH := device/xiaomi/curtana
+
 PRODUCT_MAKEFILES += \
-    lineage_curtana.mk
+    $(DEVICE_PATH)/lineage_curtana.mk
 
 COMMON_LUNCH_CHOICES += \
     lineage_curtana-userdebug \
