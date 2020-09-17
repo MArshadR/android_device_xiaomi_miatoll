@@ -1,9 +1,9 @@
-DEVICE_PATH := device/xiaomi/curtana
+DEVICE_PATH := device/xiaomi/miatoll
 
 PRODUCT_MAKEFILES += \
-    $(DEVICE_PATH)/lineage_curtana.mk
+    $(DEVICE_PATH)/lineage_miatoll.mk
 
 COMMON_LUNCH_CHOICES += \
-    lineage_curtana-userdebug \
-    lineage_curtana-user \
-    lineage_curtana-eng
+    miatoll_curtana-userdebug \
+    miatoll_curtana-user \
+    miatoll_curtana-eng
