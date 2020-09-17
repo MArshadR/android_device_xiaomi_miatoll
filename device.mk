@@ -152,6 +152,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
 
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_sm6250
