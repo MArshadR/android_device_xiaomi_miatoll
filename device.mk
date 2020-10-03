@@ -34,12 +34,19 @@ PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/audio/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
   $(LOCAL_PATH)/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
+PRODUCT_PACKAGES += \
+  libvolumelistener
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     BluetoothQti
+
+# Display
+PRODUCT_PACKAGES += \
+    vendor.display.config@1.0
 
 # FM
 PRODUCT_PACKAGES += \
