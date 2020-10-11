@@ -56,7 +56,7 @@ PRODUCT_PACKAGES += \
     qcom.fmradio.xml
 
 PRODUCT_BOOT_JARS += \
-    qcom.fmradio
+    qcom.fmradio \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -77,6 +77,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     $(LOCAL_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
+TARGET_USES_ION := true    
 
 # Screen density
 PRODUCT_PROPERTY_OVERRIDES += \
