@@ -2,14 +2,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common configs from Xtended XQ
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit common configs from Havoc-OS
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit from miatoll
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
 # Device identifier
-PRODUCT_NAME := xtended_miatoll
+PRODUCT_NAME := havoc_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 9 Series

@@ -1,9 +1,9 @@
 DEVICE_PATH := device/xiaomi/miatoll
 
 PRODUCT_MAKEFILES += \
-    $(DEVICE_PATH)/lineage_miatoll.mk
+    $(DEVICE_PATH)/havoc_miatoll.mk
 
 COMMON_LUNCH_CHOICES += \
-    miatoll_curtana-userdebug \
-    miatoll_curtana-user \
-    miatoll_curtana-eng
+    havoc_miatoll-userdebug \
+    havoc_miatoll-user \
+    havoc_miatoll-eng
