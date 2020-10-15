@@ -84,6 +84,9 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Snap
+
+PRODUCT_PACKAGES += \
     libshim_megvii
 
 # Display
