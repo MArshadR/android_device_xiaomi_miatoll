@@ -58,6 +58,10 @@ TARGET_ODM_PROP := $(DEVICE_PATH)/odm.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# SELinux
+-include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy/vendor
+
 # HIDL
 ODM_MANIFEST_SKUS += \
     joyeuse
