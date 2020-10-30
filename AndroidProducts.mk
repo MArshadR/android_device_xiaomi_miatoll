@@ -1,9 +1,9 @@
 DEVICE_PATH := device/xiaomi/miatoll
 
 PRODUCT_MAKEFILES += \
-    $(DEVICE_PATH)/havoc_miatoll.mk
+    $(DEVICE_PATH)/syntatix_miatoll.mk
 
 COMMON_LUNCH_CHOICES += \
-    havoc_miatoll-userdebug \
-    havoc_miatoll-user \
-    havoc_miatoll-eng
+    syntatix_miatoll-userdebug \
+    syntatix_miatoll-user \
+    syntatix_miatoll-eng

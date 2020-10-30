@@ -2,13 +2,17 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common configs from Havoc-OS
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit common configs from SyntatiX-OS
+$(call inherit-product, vendor/syntatix/config/common_full_phone.mk)
 
 # Inherit from miatoll
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
+# GApps
+TARGET_GAPPS_ARCH := arm64
+
 # Device identifier
+TARGET_DEVICE := miatoll
 PRODUCT_NAME := havoc_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
