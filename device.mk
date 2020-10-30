@@ -77,10 +77,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_megvii
 
-# Display
-PRODUCT_PACKAGES += \
-    vendor.display.config@1.0
-
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
